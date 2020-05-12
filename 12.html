@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+ <title>HTML - 2. 태그</title>
+ <meta charset="utf-8">
+  <style>
+  body{
+    margin:0;
+  }
+   a{
+     text-decoration: none;
+   }
+   h1{
+     border-bottom: 1px solid gray;
+     margin:0;
+     padding:20px;
+   }
+   ol{
+     border-right:1px solid gray;
+     width:150px;
+     margin:0;
+     padding: 20px;
+   }
+  </style>
+</head>
+<body>
+<h1><a href="index.html">생활코딩 첫 페이지로</a></h1>
+<h2>WEB1 - HTML & Internet</h2>
+<ol>
+<li><a href="11.html">들어가기</a></li>
+<li><a href="12.html" style="color:red;text-decoration:underline">태그</a></li>
+<li><a href="13.html">속성</a></li>
+<li><a href="14.html">웹페이지 만들기</a></li>
+</ol>
+
+
+
+<h2>2. 태그</h2>
+<img src="28tags.jpg">
+<br><br>
+<img src="head%20body.jpg"><br><br>
+① title 웹페이지의 제목 지정(크롬 탭에 나오는 이름) <br>
+② meta charset="utf-8" 한글이 깨지지 않도록 하기 위해서 입력<br>
+이 두 가지는 본문에는 표시되지 않는, 본문을 설명하는 태그다.<br>
+→ head 태그로 감싼다.<br><br>
+
+나머지 본문은 body 태그로 감싼다.<br><br>
+그리고 head와 body를 html 태그로 감싼다.<br><br>
+또한 이 웹페이지가 html로 만들어졌다는 것을 표현하기 위해서
+문서의 시작에 !doctype html 코드를 추가한다.<br><br>
+
+<strong>strong</strong>
+<u>u</u>
+<h1>h1</h1>
+<h3>h3</h3>
+<h6>h6</h6>
+※ strong과 u는 줄바꿈이 되지 않지만,<br>
+ h3, 2, 3은 제목이므로 줄바꿈이 되었다.<br><br>
+
+<input type="checkbox"><input type="checkbox">input type="checkbox"<br>
+
+img 이미지 넣기<br>
+
+<br>br 줄바꿈(닫지않음)
+<p>
+  p로 감싼 것은 하나의 단락이 된다. p로 감싼 것은 하나의 단락이 된다. p로 감싼 것은 하나의 단락이 된다. p로 감싼 것은 하나의 단락이 된다. p로 감싼 것은 하나의 단락이 된다. p로 감싼 것은 하나의 단락이 된다. p로 감싼 것은 하나의 단락이 된다. p로 감싼 것은 하나의 단락이 된다.
+</p>
+<p>
+  단락을 표현할 때는 br보다 p가 더 좋다.<br>
+  ∵ 웹페이지를 정보로서 보다 가치있게 해주기 때문<br>
+  but p는 단락과 단락의 간격이 고정된다는 단점이 있다.<br>
+  ∴ CSS를 이용한다. p style="margin-top:45px;" → 위쪽에 45px 여백이 생긴다.
+</p>
+<p style="margin-top:45px;">
+ 이 단락은 위쪽 간격을 45px로 적용해보았다.
+</p>
+
+ 특정 부분 코드를 무시하게 하기:<br>
+ 괄호!-- (무시할 부분) --괄호<br><br>
+
+ 주석 만들기 /* (내용) */<br>
+
+<h3>< 부모 태그와 자식 태그 ></h3>
+ parent <br>
+    child /child <br>
+ /parent <br><br>
+
+ * 부모 자식 관계가 고정된 태그들 <br>
+li (list) 목차. 앞에 까만 동그라미가 붙는다. <br><br>
+HTML
+CSS
+JavaScript<br>
+↓
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+
+- li라는 부모 태그의 자식 태그들 (ul, ol)<br>
+  둘 다 목차와 목차를 구분하는 경계를 만들어준다.<br>
+  → 이전 및 다음 글과 한줄 띄어쓰기가 되고,<br>
+      앞에도 몇 칸씩 띄어쓰기가 된다.<br><br>
+
+ (1) ul (unordered list) 까만 동그라미는 살아있고, 두 가지 띄어쓰기만 적용된다.
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul>
+
+ ※ 까만 동그라미 없애거나 바꾸기:<br>
+ type="" none / disc(디폴트•) / circle(◦) / square(◼)<br><br>
+
+(2) ol (ordered list) 까만 동그라미는 없어지고<br>
+  앞에 1. 2. 3. 을 자동으로 붙여준다.<br>
+  중간에 하나가 빠져도 자동으로 숫자가 변경된다.<br>
+  <ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ol>
+
+</body>
+</html>
