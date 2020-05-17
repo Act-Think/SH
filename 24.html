@@ -1,21 +1,18 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>CSS-반응형 디자인</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-  </head>
-  <body>
-    <h1><a href="index.html">생활코딩 첫 페이지로</a></h1>
-    <h2>WEB2 - CSS</h2>
-    <ol>
-      <li><a href="21.html">속성과 선택자</a></li>
-      <li><a href="22.html">박스모델</a></li>
-      <li><a href="23.html">그리드</a></li>
-      <li><a href="24.html">반응형 디자인</a>
-      <li><a href="25.html">CSS코드의 재사용</a></li>
-    </ol>
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS-그리드</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body>
+  <div w3-include-html="home.html" id="home"></div>
+  <div id="grid">
+    <div w3-include-html="menu.html" id="menu"></div>
+    <div id="article">
 <p>웹은 수많은 형태의 화면에서 동작해야 한다.<br>
     (컴퓨터, 스마트폰, 가상현실 등)<br>
     그래서 화면의 크기에 따라 웹페이지의 각 요소들이 반응해서<br>
@@ -63,6 +60,10 @@
 
  </p>
 
+</div>
+</div>
 
-  </body>
+<script>w3.includeHTML();</script>
+</body>
+
 </html>

@@ -1,13 +1,18 @@
 <!doctype html>
 <html>
+
 <head>
- <title>HTML - 2. 태그</title>
- <meta charset="utf-8">
- <link rel="stylesheet" href="css/style.css">
- <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <meta charset="utf-8">
+  <title>CSS-그리드</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
+
 <body>
- <div w3-include-html="menu.html"></div>
+  <div w3-include-html="home.html" id="home"></div>
+  <div id="grid">
+    <div w3-include-html="menu.html" id="menu"></div>
+    <div id="article">
 <h2>2. 태그</h2>
 <img src="img/01/28tags.jpg">
 <br><br>
@@ -22,7 +27,7 @@
 또한 이 웹페이지가 html로 만들어졌다는 것을 표현하기 위해서
 문서의 시작에 !doctype html 코드를 추가한다.<br><br>
 
-<strong>strong</strong>
+<strong>strong</strong><br>
 <u>u</u>
 <h1>h1</h1>
 <h3>h3</h3>
@@ -90,7 +95,10 @@ JavaScript<br>
     <li>HTML</li>
     <li>CSS</li>
     <li>JavaScript</li>
-  </ol>
-  <script>w3.includeHTML();</script>
+  </div>
+</div>
+
+<script>w3.includeHTML();</script>
 </body>
+
 </html>

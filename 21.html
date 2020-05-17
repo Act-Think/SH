@@ -1,22 +1,18 @@
 <!doctype html>
 <html>
-<head>
- <title>CSS-속성과 선택자</title>
- <meta charset="utf-8">
- <link rel="stylesheet" href="css/style.css">
- <script src="https://www.w3schools.com/lib/w3.js"></script>
-</head>
-<body>
-  <h1><a href="index.html">생활코딩 첫 페이지로</a></h1>
-  <h2>WEB2 - CSS</h2>
-  <ol>
-    <li><a href="21.html">속성과 선택자</a></li>
-    <li><a href="22.html">박스모델</a></li>
-    <li><a href="23.html">그리드</a></li>
-    <li><a href="24.html">반응형 디자인</a>
-    <li><a href="25.html">CSS코드의 재사용</a></li>
-  </ol>
 
+<head>
+  <meta charset="utf-8">
+  <title>CSS-그리드</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body>
+  <div w3-include-html="home.html" id="home"></div>
+  <div id="grid">
+    <div w3-include-html="menu.html" id="menu"></div>
+    <div id="article">
 <p>
 CSS는 html과 완전히 다른 언어이다.<br>
 따라서 웹브라우저에게 그것이 CSS라는 사실을 알려줘야 한다.<br>
@@ -80,6 +76,10 @@ CSS는 html과 완전히 다른 언어이다.<br>
   <li>text-align: center; 글자 정렬</li>
   <li>text-decoration: none; 밑줄 없애기</li>
 </ul>
+</div>
+</div>
 
+<script>w3.includeHTML();</script>
 </body>
+
 </html>

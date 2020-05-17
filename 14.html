@@ -1,75 +1,56 @@
 <!doctype html>
 <html>
 <head>
- <title>HTML - 4. 웹페이지 만들기</title>
- <meta charset="utf-8">
- <link rel="stylesheet" href="css/style.css">
- <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <body>
-<h1><a href="index.html">생활코딩 첫 페이지로</a></h1>
-<h2>WEB1 - HTML & Internet</h2>
-<ol>
-  <li><a href="11.html" class="saw">들어가기</a></li>
-  <li><a href="12.html" class="saw">태그</a></li>
-  <li><a href="13.html" class="saw">속성</a></li>
-  <li><a href="14.html" class="saw" id="active">웹페이지 만들기</a></li>
-</ol>
-
-<h2>4. 웹사이트 만들기</h2>
-
-* 웹사이트: 링크를 통해서 서로 결합되어 있는 웹페이지들의 그룹<br>
-
-<p>
-1. body 밑에 웹사이트 전체를 대표하는 큰 제목을 만들고 h1로 감싼다.<br>
-
- - 생활코딩 WEB1
-</p>
-
-<p>
-2. 그 밑에 각 페이지와 연결시킬 소제목을 만들고 li + ol로 감싼다.<br>
-
- - 1. 들어가기<br>
-
- - 2. 태그<br>
-
- - 3. 속성<br>
-
- - 4. 웹페이지 만들기
-</p>
-
-<p>
-3. 1와 2에 각각 링크를 건다.<br>
-
-  이 때, Ctrl을 누르고 커서를 여기저기 누른 후 입력하면 동시에 입력이 된다.<br>
-
-  a href="1.html" /a<br>
-
-  추천 파일명은 index.html, 1.html, 2.html,..이다.
-</p>
-
-<p>
-4. 본문을 다 써놓은 html 파일을 복제해서<br>
-
-  index.html, 1.html, 2.html,..을 만든다.
-</p>
-
-<p>
-5. 1.html, 2.html,..은<br>
- (1) h2로 제목을 써준다. ex) 1. 들어가기<br>
-
- (2) 본문에 쓰고 싶은 내용을 쓰거나 원하는 내용만 남긴다.<br>
-
- (3) title도 바꿔준다. ex) WEB1 - 1. 들어가기
-</p>
-
-<p>
-6. index.html은<br>
-
- (1) title을 바꿔준다. ex) WEB1 - Welcome<br>
-
- (2) 본문에 원하는 내용을 쓴다. ex) 생활코딩 WEB1 - HTML & Internet
-</p>
-
+  <div id="home"></div>
+  <div id="grid">
+    <div id="menu"></div>
+    <div id="article">
+      <h3></h3>
+      * 웹사이트: 링크를 통해서 서로 결합되어 있는 웹페이지들의 그룹<br>
+      <p>
+        1. body 밑에 웹사이트 전체를 대표하는 큰 제목을 만들고 h1로 감싼다.<br>
+        - 생활코딩 WEB1
+      </p>
+      <p>
+        2. 그 밑에 각 페이지와 연결시킬 소제목을 만들고 li + ol로 감싼다.<br>
+        - 1. 들어가기<br>
+        - 2. 태그<br>
+        - 3. 속성<br>
+        - 4. 웹페이지 만들기
+      </p>
+      <p>
+        3. 1와 2에 각각 링크를 건다.<br>
+        이 때, Ctrl을 누르고 커서를 여기저기 누른 후 입력하면 동시에 입력이 된다.<br>
+        a href="1.html" /a<br>
+        추천 파일명은 index.html, 1.html, 2.html,..이다.
+      </p>
+      <p>
+        4. 본문을 다 써놓은 html 파일을 복제해서<br>
+        index.html, 1.html, 2.html,..을 만든다.
+      </p>
+      <p>
+        5. 1.html, 2.html,..은<br>
+        (1) h2로 제목을 써준다. ex) 1. 들어가기<br>
+        (2) 본문에 쓰고 싶은 내용을 쓰거나 원하는 내용만 남긴다.<br>
+        (3) title도 바꿔준다. ex) WEB1 - 1. 들어가기
+      </p>
+      <p>
+        6. index.html은<br>
+        (1) title을 바꿔준다. ex) WEB1 - Welcome<br>
+        (2) 본문에 원하는 내용을 쓴다. ex) 생활코딩 WEB1 - HTML & Internet
+      </p>
+    </div>
+  </div>
+  <script src="js/common.js"></script>
+  <script>
+    document.head.querySelector('title').innerHTML = n14[0] + "-" + n14[2];
+    document.querySelector('h3').innerHTML = n14[0] + "-" + n14[1] + "." + n14[2];
+  </script>
 </body>
 </html>

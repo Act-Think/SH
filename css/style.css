@@ -1,4 +1,19 @@
-h1 {
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap&subset=korean');
+
+body{
+  margin:0px;
+}
+
+body, a{
+  color: #2d2d2d;
+}
+
+/* font 설정 */
+body, button, input, textarea, select {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+#home {
   border-bottom: 1px solid gray;
   padding-top: 10px;
   padding-bottom: 15px;
@@ -7,16 +22,11 @@ h1 {
  }
 
 a{
-  color: black;
   text-decoration:none;
 }
 
-body{
-  margin:0px;
-}
-
 #grid{
-  display: grid;
+  display:grid;
   grid-template-columns: 180px 1fr;
 }
 

@@ -1,21 +1,18 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>CSS-박스모델</title>
-    <link rel="stylesheet" href="css/style.css">
- <script src="https://www.w3schools.com/lib/w3.js"></script>
-  </head>
-  <body>
-    <h1><a href="index.html">생활코딩 첫 페이지로</a></h1>
-    <h2>WEB2 - CSS</h2>
-    <ol>
-      <li><a href="21.html">속성과 선택자</a></li>
-      <li><a href="22.html">박스모델</a></li>
-      <li><a href="23.html">그리드</a></li>
-      <li><a href="24.html">반응형 디자인</a>
-      <li><a href="25.html">CSS코드의 재사용</a></li>
-    </ol>
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS-그리드</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body>
+  <div w3-include-html="home.html" id="home"></div>
+  <div id="grid">
+    <div w3-include-html="menu.html" id="menu"></div>
+    <div id="article">
 <h3>1. box model 소개</h3>
   <ul>
     <li>박스모델: HTML 태그 하나하나를 일종의 네모난 박스로 취급해서<br>
@@ -133,5 +130,10 @@ padding: 20px;→해결<br>
       padding:20px;
     }
 </p>
-  </body>
+</div>
+</div>
+
+<script>w3.includeHTML();</script>
+</body>
+
 </html>

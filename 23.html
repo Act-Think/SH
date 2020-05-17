@@ -1,107 +1,85 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>CSS-그리드</title>
-    <link rel="stylesheet" href="css/style.css">
- <script src="https://www.w3schools.com/lib/w3.js"></script>
-  </head>
-  <body>
-    <h1><a href="index.html">생활코딩 첫 페이지로</a></h1>
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS-그리드</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body>
+  <div w3-include-html="home.html" id="home"></div>
   <div id="grid">
-   <div id="menu">
-     <h2>HTML</h2>
-     <ol>
-       <li><a href="11.html">들어가기</a></li>
-       <li><a href="12.html">태그</a></li>
-       <li><a href="13.html">속성</a></li>
-       <li><a href="14.html">웹페이지 만들기</a></li>
-     </ol>
-    <h2>CSS</h2>
-    <ol>
-      <li><a href="21.html">속성과 선택자</a></li>
-      <li><a href="22.html">박스모델</a></li>
-      <li><a href="23.html">그리드</a></li>
-      <li><a href="24.html">반응형 디자인</a>
-      <li><a href="25.html">CSS코드의 재사용</a></li>
-    </ol>
-    <h2>JavaScript</h2>
-    <ol>
-     <li><a href="31.html">JavaScript에 대하여</a></li>
-     <li><a href="32.html">콘솔</a></li>
-     <li><a href="33.html">이벤트</a></li>
-     <li><a href="34.html">데이터 타입</a></li>
-     <li><a href="35.html">변수와 대입 연산자</a></li>
-     <li><a href="36.html">웹브라우저 제어</a></li>
-  </ol>
+    <div w3-include-html="menu.html" id="menu"></div>
+    <div id="article">
+      <h3>1. 그리드의 기본 사용법</h3>
+      <p>박스모델에서 웹페이지에 줄을 그어보았다.<br>
+        이번에는 아래 그림처럼 목록과 본문이 나란히 위치하는 디자인을 해본다.<br>
+        그 방법에는 여러 가지가 있는데 최신의 방법인 그리드를 사용해본다.<br><br>
+
+        <img src="img/02/grid04.png"><br>
+
+        이를 위해서 디자인만을 위해 사용하는 태그를 쓴다.<br>
+        ① div - block level element<br>
+        ② span - inline element<br>
+        목적에 따라서 둘 중 선택한다.<br>
+        오늘은 div를 사용할 것이다.<br><br>
+
+        연습으로 NAVIGATION과 ARTICLE 두 가지 글자를<br>
+        각각 div 태그로 묶어준다.<br><br>
+
+        이 두 태그를 나란히 놓으려면<br>
+        이 두 태그를 다시한번 div라는 부모 태그로 감싸줘야 한다.<br>
+        부모 div 태그에 grid라는 id를 주었다.<br>
+
+        <img src="img/02/grid01.png"><br>
+
+        CSS로 id가 grid인 태그에 display:grid 속성을 추가하고<br>
+        왼쪽은 150px, 나머지는 오른쪽이 다 차지하도록 설정한다.<br>
+
+        <img src="img/02/grid02.png"><br>
+
+        cf) 1fr 1fr로 하면 두 태그가 화면 가로를 1:1로 차지한다.<br>
+        1fr 2fr로 하면 두 태그가 화면 가로를 1:2로 차지한다.<br><br>
+
+        ※grid처럼 CSS나 HTML 또는 JavaScript의 최신 기술을 사용하려면<br>
+        현재 웹브라우저들이 얼마나 그 기술을 채택하고 있는지 확인해볼 필요가 있다.<br>
+        caniuse.com에서 그 통계자료를 제공한다.<br>
+
+        <img src="img/02/grid03.png"><br></p>
+
+      <h3>2. 그리드 써먹기</h3>
+      <p>다음 그림과 같은 웹페이지에서<br>
+        ol태그와 h2+p태그를 나란히 놓아보자.<br>
+        <img src="img/02/grid05.png"><br><br>
+
+        먼저 h2+p 태그를 div로 묶어주고,<br>
+        그것과 ol 태그를 다시 한번 div(부모 태그)로 묶어주고<br>
+        부모 div 태그의 id를 grid로 지정해준다.<br><br>
+
+        head의 style 안에 다음과 같이 써준다.<br>
+        #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        }<br>
+        ※ row는 행, column은 열이다.<br><br>
+
+        검사 - 개발자 도구에서 박스 모델을 조정해준다.<br>
+        ※ 각 부분의 숫자를 더블클릭하고 키보드 위/아래 키를 누르면 크기를 조정해볼 수 있다.<br><br>
+
+        #grid ol{ padding-left:33px; }<br>
+        #grid #article{ padding-left:25px; }<br>
+        ※ 본문에 다른 ol태그가 있을 수도 있으므로 앞에 #grid를 추가했다.<br>
+        article은 id값이므로 굳이 #grid를 추가할 필요는 없지만,<br>
+        의미를 좀더 분명히 하기 위해서 붙였다.<br><br>
+
+        <img src="img/02/grid05.png">
+
+    </div>
   </div>
 
-<div id="article">
-<h3>1. 그리드의 기본 사용법</h3>
-<p>박스모델에서 웹페이지에 줄을 그어보았다.<br>
-    이번에는 아래 그림처럼 목록과 본문이 나란히 위치하는 디자인을 해본다.<br>
-    그 방법에는 여러 가지가 있는데 최신의 방법인 그리드를 사용해본다.<br><br>
+  <script>w3.includeHTML();</script>
+</body>
 
-    <img src="img/02/grid04.png"><br>
-
-    이를 위해서 디자인만을 위해 사용하는 태그를 쓴다.<br>
-    ① div - block level element<br>
-    ② span - inline element<br>
-    목적에 따라서 둘 중 선택한다.<br>
-    오늘은 div를 사용할 것이다.<br><br>
-
-    연습으로 NAVIGATION과 ARTICLE 두 가지 글자를<br>
-    각각 div 태그로 묶어준다.<br><br>
-
-    이 두 태그를 나란히 놓으려면<br>
-    이 두 태그를 다시한번 div라는 부모 태그로 감싸줘야 한다.<br>
-    부모 div 태그에 grid라는 id를 주었다.<br>
-
-    <img src="img/02/grid01.png"><br>
-
-    CSS로 id가 grid인 태그에 display:grid 속성을 추가하고<br>
-    왼쪽은 150px, 나머지는 오른쪽이 다 차지하도록 설정한다.<br>
-
-    <img src="img/02/grid02.png"><br>
-
-    cf) 1fr 1fr로 하면 두 태그가 화면 가로를 1:1로 차지한다.<br>
-    1fr 2fr로 하면 두 태그가 화면 가로를 1:2로 차지한다.<br><br>
-
-    ※grid처럼 CSS나 HTML 또는 JavaScript의 최신 기술을 사용하려면<br>
-    현재 웹브라우저들이 얼마나 그 기술을 채택하고 있는지 확인해볼 필요가 있다.<br>
-    caniuse.com에서 그 통계자료를 제공한다.<br>
-
-    <img src="img/02/grid03.png"><br></p>
-
-<h3>2. 그리드 써먹기</h3>
-<p>다음 그림과 같은 웹페이지에서<br>
-ol태그와 h2+p태그를 나란히 놓아보자.<br>
-    <img src="img/02/grid05.png"><br><br>
-
-먼저 h2+p 태그를 div로 묶어주고,<br>
-그것과 ol 태그를 다시 한번 div(부모 태그)로 묶어주고<br>
-부모 div 태그의 id를 grid로 지정해준다.<br><br>
-
-head의 style 안에 다음과 같이 써준다.<br>
-#grid{
-  display: grid;
-  grid-template-columns: 150px 1fr;
-}<br>
-※ row는 행, column은 열이다.<br><br>
-
-검사 - 개발자 도구에서 박스 모델을 조정해준다.<br>
-※ 각 부분의 숫자를 더블클릭하고 키보드 위/아래 키를 누르면 크기를 조정해볼 수 있다.<br><br>
-
-#grid ol{ padding-left:33px; }<br>
-#grid #article{ padding-left:25px; }<br>
-※ 본문에 다른 ol태그가 있을 수도 있으므로 앞에 #grid를 추가했다.<br>
- article은 id값이므로 굳이 #grid를 추가할 필요는 없지만,<br>
- 의미를 좀더 분명히 하기 위해서 붙였다.<br><br>
-
-    <img src="img/02/grid05.png">
-
-</div>
-</div>
-
-  </body>
 </html>

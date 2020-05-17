@@ -1,32 +1,39 @@
 <!doctype html>
 <html>
+
 <head>
- <title>HTML - 들어가기</title>
- <meta charset="utf-8">
- <link rel="stylesheet" href="css/style.css">
- <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <meta charset="utf-8">
+  <title>CSS-그리드</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
+
 <body>
-<div w3-include-html="menu.html"></div>
-<h2>1. 들어가기</h2>
-   <ul>
-      <li>html editor로 검색해서 자신에게 맞는 에디터 찾기<br>
-        생활코딩에서는 Atom 사용<br>
-        brackets도 추천<br></li>
+  <div w3-include-html="home.html" id="home"></div>
+  <div id="grid">
+    <div w3-include-html="menu.html" id="menu"></div>
+    <div id="article">
+      <h2>1. 들어가기</h2>
+      <ul>
+        <li>html editor로 검색해서 자신에게 맞는 에디터 찾기<br>
+          생활코딩에서는 Atom 사용<br>
+          brackets도 추천<br></li>
 
-      <li>Atom 자동 줄바꿈 - 설정에서 Soft wrap에 체크<br>
-        선택 후 Tab / shift + Tab → 띄어쓰기 한칸 뒤로 / 앞으로<br>
-        꺽쇠 없이 태그 이름 치고 엔터 → 꺽쇠 & 닫는 태그까지 자동으로 써짐</li><br>
+        <li>Atom 자동 줄바꿈 - 설정에서 Soft wrap에 체크<br>
+          선택 후 Tab / shift + Tab → 띄어쓰기 한칸 뒤로 / 앞으로<br>
+          꺽쇠 없이 태그 이름 치고 엔터 → 꺽쇠 & 닫는 태그까지 자동으로 써짐</li><br>
 
-      <li>※ Visual Studio에서<br>
-        ! + Tab / doc + Tab → html 기본 세팅<br>
-        선택 후 Alt + shift + F → 띄어쓰기 자동 정리<br>
-        선택 후 Tab / shift + Tab → 띄어쓰기 한칸 뒤로 / 앞으로<br>
-        선택 후 Alt + ↑ / ↓ → 해당 부분으르 한 칸 위 / 아랫줄으로<br>
-      lorem + Tab → 무작위 글 써지도록</li>
-    </ul>
-    <script>
-    includeHTML();
-    </script>
+        <li>※ Visual Studio에서<br>
+          ! + Tab / doc + Tab → html 기본 세팅<br>
+          선택 후 Alt + shift + F → 띄어쓰기 자동 정리<br>
+          선택 후 Tab / shift + Tab → 띄어쓰기 한칸 뒤로 / 앞으로<br>
+          선택 후 Alt + ↑ / ↓ → 해당 부분을 한 칸 위 / 아랫줄으로<br>
+          lorem + Tab → 무작위 글 써지도록</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>w3.includeHTML();</script>
 </body>
+
 </html>
