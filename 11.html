@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>CSS-그리드</title>
@@ -9,15 +8,15 @@
 </head>
 
 <body>
-  <div w3-include-html="home.html" id="home"></div>
+  <header id="home"></header>
   <div id="grid">
-    <div w3-include-html="menu.html" id="menu"></div>
+    <div id="menu"></div>
     <div id="article">
-      <h2>1. 들어가기</h2>
+      <h3>1. 들어가기</h3>
       <ul>
         <li>html editor로 검색해서 자신에게 맞는 에디터 찾기<br>
           생활코딩에서는 Atom 사용<br>
-          brackets도 추천<br></li>
+          brackets도 추천</li><br>
 
         <li>Atom 자동 줄바꿈 - 설정에서 Soft wrap에 체크<br>
           선택 후 Tab / shift + Tab → 띄어쓰기 한칸 뒤로 / 앞으로<br>
@@ -32,8 +31,10 @@
       </ul>
     </div>
   </div>
-
-  <script>w3.includeHTML();</script>
-</body>
-
-</html>
+  <script src="js/common.js"></script>
+  <script>
+    document.head.querySelector('title').innerHTML = n11[0] + "-" + n11[2];
+    document.querySelector('h3').innerHTML = n11[0] + "-" + n11[1] + "." + n11[2];
+  </script>
+  
+  </html>

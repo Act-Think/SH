@@ -1,19 +1,21 @@
 <!doctype html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <title>CSS-그리드</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
-</head>
-
-<body>
-  <div w3-include-html="home.html" id="home"></div>
-  <div id="grid">
-    <div w3-include-html="menu.html" id="menu"></div>
-    <div id="article">
-<h2>2. 태그</h2>
+  <!doctype html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS-그리드</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+  </head>
+  
+  <body>
+    <header id="home"></header>
+    <div id="grid">
+      <div id="menu"></div>
+      <div id="article">
+<h3>2. 태그</h3>
 <img src="img/01/28tags.jpg">
 <br><br>
 <img src="img/01/head%20body.jpg"><br><br>
@@ -97,8 +99,10 @@ JavaScript<br>
     <li>JavaScript</li>
   </div>
 </div>
-
-<script>w3.includeHTML();</script>
-</body>
+<script src="js/common.js"></script>
+<script>
+  document.head.querySelector('title').innerHTML = n12[0] + "-" + n12[2];
+  document.querySelector('h3').innerHTML = n12[0] + "-" + n12[1] + "." + n12[2];
+</script>
 
 </html>
