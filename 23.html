@@ -3,16 +3,17 @@
 
 <head>
   <meta charset="utf-8">
-  <title>CSS-그리드</title>
+  <title></title>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 
 <body>
-  <div w3-include-html="home.html" id="home"></div>
+  <header id="home"></header>
   <div id="grid">
-    <div w3-include-html="menu.html" id="menu"></div>
+    <div id="menu"></div>
     <div id="article">
+      <h3></h3>
       <h3>1. 그리드의 기본 사용법</h3>
       <p>박스모델에서 웹페이지에 줄을 그어보았다.<br>
         이번에는 아래 그림처럼 목록과 본문이 나란히 위치하는 디자인을 해본다.<br>
@@ -75,11 +76,12 @@
         의미를 좀더 분명히 하기 위해서 붙였다.<br><br>
 
         <img src="img/02/grid05.png">
-
     </div>
   </div>
-
-  <script>w3.includeHTML();</script>
-</body>
+  <script src="js/common.js"></script>
+  <script>
+    document.head.querySelector('title').innerHTML = n23[0] + "-" + n23[2];
+    document.querySelector('h3').innerHTML = n23[0] + " - " + n23[1] + ". " + n23[2];
+  </script>
 
 </html>
