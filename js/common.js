@@ -42,13 +42,13 @@ const menu = `
 </ol>
 <h2>JavaScript</h2>
 <ol>
-  <li><a href="31.html">JavaScript에 대하여</a></li>
-  <li><a href="32.html">콘솔</a></li>
-  <li><a href="33.html">이벤트</a></li>
-  <li><a href="34.html">데이터 타입</a></li>
-  <li><a href="35.html">변수와 대입 연산자</a></li>
-  <li><a href="36.html">웹브라우저 제어</a></li>
-  <li><a href="37.html">조건문</a></li>
+<li><a href="31.html">${n31[2]}</a></li>
+<li><a href="32.html">${n32[2]}</a></li>
+<li><a href="33.html">${n33[2]}</a></li>
+<li><a href="34.html">${n34[2]}</a></li>
+<li><a href="35.html">${n35[2]}</a></li>
+<li><a href="36.html">${n36[2]}</a></li>
+<li><a href="37.html">${n37[2]}</a></li>
 <ol>
 `;
 
