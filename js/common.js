@@ -10,12 +10,12 @@ var n24 = ["CSS", "4", "반응형 디자인"]
 var n25 = ["CSS", "5", "CSS 코드의 재사용"]
 
 var n31 = ["JavaScript", "1", "JavaScript에 대하여"]
-var n32 = ["JavaScript", "2", "콘솔"]
-var n33 = ["JavaScript", "3", "이벤트"]
-var n34 = ["JavaScript", "4", "데이터 타입"]
-var n35 = ["JavaScript", "5", "변수와 대입 연산자"]
-var n36 = ["JavaScript", "6", "웹브라우저 제어"]
-var n37 = ["JavaScript", "7", "조건문"]
+var n32 = ["JavaScript", "2", "이벤트"]
+var n33 = ["JavaScript", "3", "데이터 타입"]
+var n34 = ["JavaScript", "4", "변수와 대입 연산자"]
+var n35 = ["JavaScript", "5", "웹브라우저 제어"]
+var n36 = ["JavaScript", "6", "조건문"]
+var n37 = ["JavaScript", "7", "배열"]
 
 
 
