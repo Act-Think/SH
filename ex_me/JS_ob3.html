@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var coworkers = {
+        "programmer" : "egoing",
+        "designer" : "leezche",
+        "bookkeeper" : "duru"
+        };
+
+        // cf) 함수 만들기: function showAll(){}
+        coworkers.showAll = function() {
+            for(var key in this) {
+            document.write(this[key]+'<br>');
+        }};
+    </script>
+</body>
+</html>
