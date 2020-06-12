@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+        function ND(self) {
+            var target = document.querySelector('body');
+            if (self.value === 'Night') {
+                target.style.color = 'white';
+                target.style.backgroundColor = 'black';
+                self.value = 'Day';
+
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while (i < alist.length) {
+                    alist[i].style.color = 'powderblue';
+                    i = i + 1;
+                }
+
+            } else {
+                target.style.color = 'black';
+                target.style.backgroundColor = 'white';
+                self.value = 'Night';
+
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while (i < alist.length) {
+                    alist[i].style.color = 'blue';
+                    i = i + 1;
+                }
+            }
+        }
+    </script>
+
+    <input type="button" value="Night" onclick="
+    ND(this)
+    ">
+    abc
+    <a href="11.html">11</a>
+</body>
+</html>

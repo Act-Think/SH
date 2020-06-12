@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate aliquam amet delectus at sequi, repellendus
+    maxime neque suscipit minus labore voluptas officia consequuntur, tempore alias ab quisquam aliquid ipsum adipisci!
+    <br>
+    <a href="11.html">I'm a tag.</a><br>
+    <a href="12.html">I'm a tag, too.</a>
+
+    <script>
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length) {
+        document.write(alist[i]);
+        i = i + 1;}
+    </script>
+
+
+    <input type="button" value="Night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'Night') {
+    target.style.color = 'white';
+    target.style.backgroundColor = 'black';
+    this.value = 'Day';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length) {
+        alist[i].style.color = 'powderblue';
+        i = i + 1;
+     }
+    } else {
+    target.style.color = 'black';
+    target.style.backgroundColor = 'white';
+    this.value = 'Night';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length) {
+        alist[i].style.color = 'blue';
+        i = i + 1;}
+    }">
+</body>
+
+</html>

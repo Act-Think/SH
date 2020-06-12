@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>document.write('Hello world' .length)</script><br><br>
+    <script>var name='XOXO';
+    document.write("Lorem ipsum dolor sit amet "+name+" consectetur adipisicing elit. Dolore nihil "+name+" quidem deserunt, error "+name+" velit perspiciatis fuga quibusdam dicta "+name+" odit minus aperiam ipsum, eveniet harum "+name+" autem ab voluptas? Totam, quia vel.");</script>
+
+<input type="button" value="Night" onclick="
+  var target = document.querySelector('body');
+  if(this.value === 'Night') {
+     target.style.backgroundColor='black';
+     target.style.color='white';
+     this.value='Day';
+  } else {
+     target.style.backgroundColor='white';
+     target.style.color='black';
+     this.value='Night';
+}">
+
+<script>
+ document.write("1, ");
+ if(false) {
+     document.write("2, ");
+ } else {
+     document.write("3, ")
+ }
+ document.write("4");
+</script>
+
+<script>
+    var fruits = ["apple", "pear", "banana"];
+    document.write(fruits[0]);
+    document.write(fruits.length);
+    fruits.push("Orange"); // 배열에 데이터 추가
+</script>
+
+
+<script>
+    document.write("1<br>");
+    var i = 0;
+    while(i < 3) {
+        document.write("2<br>");
+        document.write("3<br>");
+        i = i + 1
+    }
+    document.write("4<br>");
+</script>
+<br><br>
+
+
+<script>
+    var animals = ["dog", "cat", "rabbit"];
+    var i = 0;
+    while(i < animals.length) {
+        document.write(animals[i]+"<br>");
+    i = i + 1;
+    }
+</script>
+
+
+
+
+
+
+</body>
+</html>
